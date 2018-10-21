@@ -1,0 +1,37 @@
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+
+  }
+
+.second-arc  {
+    transform: rotateZ(-90deg);
+    fill:none;
+    stroke:red;
+    stroke-width:2;
+animation: dash 60s infinite linear;
+}
+
+
+.second-hand {
+animation: rotate 60s infinite linear;
+}
+.minute-hand {
+animation: rotate 3600s infinite linear;
+}
+.hour-hand {
+animation: rotate 43200s infinite linear;
+}
+.edge {
+    fill:none;
+    stroke-width:1;
+    stroke:black;
+
+    }

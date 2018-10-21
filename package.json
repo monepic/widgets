@@ -1,5 +1,6 @@
 {
   "name": "widgets",
+  "homepage":"monepic.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
