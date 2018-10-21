@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
 import './Clock.css';
 
-class App extends Component {
-    render() {
-        return (
-            <Clock/>
-        );
-    }
-}
-
-export default App;
-
-
-const Clock = () => {
+export default () => {
     const radius = 80;
     return <svg viewBox="-100 -100 200 200" height="100vh" >
         <circle className="edge" r={radius} />
@@ -27,7 +16,6 @@ class Hands extends Component {
         super(props);
         this.state={seconds:0};
 
-
         this.arc = {
             radius: props.radius + 4
         }
@@ -37,6 +25,7 @@ class Hands extends Component {
             height: props.radius,
             offset:5
         };
+
         this.minute = {
             width:3,
             height: props.radius * 0.75,
@@ -47,7 +36,6 @@ class Hands extends Component {
             height: props.radius * 0.5,
             offset: 5
         }
-
     }
 
     init() {
